@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=water; $WATER + ibase=stir; $STIR" | bc | tr -d '\n' | xargs -I{} echo "obase=bestchol; {}" | bc
+WATER=$(echo "$WATER" | tr '[:lower:]' '[:upper:]'); STIR=$(echo "$STIR" | tr '[:lower:]' '[:upper:]'); RESULT=$(printf "%X" "$((0x$WATER + 0x$STIR))"); for digit in $(echo $RESULT | fold -w1); do echo ${DIGIT_MAPPING["$digit"]}; done | tr -d '\n'; echo
