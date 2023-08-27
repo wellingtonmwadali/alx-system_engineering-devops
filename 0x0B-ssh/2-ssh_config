@@ -1,0 +1,5 @@
+Host school server
+HostName 54.237.7.116
+User ubuntu
+IdentityFile ~/.ssh/school
+PasswordAunthentication no
