@@ -1,0 +1,7 @@
+B
+#!/usr/bin/env bash
+# Script that turns on an Apache Server container
+
+
+
+ce apache2 start
